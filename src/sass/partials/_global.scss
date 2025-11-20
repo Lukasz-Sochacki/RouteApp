@@ -1,0 +1,26 @@
+// Plik global.scss będzie dla nas z kolei miejscem na te reguły, które nie tyczą się ani układu, ani bezpośrednio tekstu, ale wciąż mogą być traktowane jako uniwersalne, czyli właśnie takie, które mogą być z powodzeniem używane w wielu miejscach – sekcjach czy podstronach. Co możemy tutaj zawrzeć? Chociażby style dla buttonów, które wyglądają identycznie w kilku sekcjach.
+// Czas zastanowić się teraz nad plikiem _global.scss. Warto ustalić wygląd całego body. Dobrze poszukać też uniwersalnych elementów. Może np. w kilku miejscach powtarza się podobny przycisk? Może kilka list wygląda podobnie? Odnajdź takie powtarzające się elementy i dodaj dla nich klasy.
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: $color-black;
+  font-family: $font-family;
+  font-size: 14px;
+  line-height: 1.7;
+  font-weight: $font-regular;
+  color: $color-white;
+}
+
+#pages {
+  > * {
+    display: none;
+  }
+
+  > .active {
+    display: block;
+  }
+}

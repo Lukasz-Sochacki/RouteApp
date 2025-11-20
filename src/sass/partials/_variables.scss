@@ -1,0 +1,14 @@
+// _variables.scss to miejsce na zmienne. Chodzi o zmienne z kolorami, nazwami czcionek, rozmiarami itd. Dzięki temu, że będą one przechowywane w jednym pliku, jesteśmy w stanie łatwo skonfigurować wygląd projektu, nawet nie patrząc na konkretne reguły! Wyobraź sobie np. taki scenariusz. Powiedzmy, że w tym pliku utworzysz zmienną $primaryColor, która definiuje kolor główny używany na stronie. Przyjmijmy, że nadaliśmy mu jakąś wartość np. #000. Następnie stylujemy mnóstwo elementów w kilku różnych sekcjach, ale zawsze korzystając ze zmiennych, np. właśnie ze zmiennej $primaryColor. Klient przyjmuje projekt, twierdzi, że wszystko gra, po czym po kilku miesiącach wraca do nas z prośbą o zmianę “głównego” koloru na inny. Czy po tak długim czasie “dłubanie” w pojedynczych regułach i podmienianie koloru byłoby przyjemne? Nie, ale nie musimy tego robić! Wystarczy, że zmienimy wartość zmiennej $primaryColor w pliku variables.scss i… tyle. Nie musimy nawet zaglądać do pozostałych plików. Brzmi świetnie, prawda?
+
+$color-darkRed: #c24e00;
+$color-white: #fff;
+$color-green: #2ecc71;
+$color-black: #131313;
+$color-red: #e74c3c;
+
+$font-regular: 400;
+$font-semibold: 600;
+$font-bold: 700;
+$font-bigbold: 900;
+
+$font-family: 'Source Sans 3', 'sans-serif';
