@@ -72,8 +72,8 @@ const app = {
   init: function () {
     const thisApp = this;
 
-    thisApp.initAbout();
     thisApp.initFinder();
+    thisApp.initAbout();
     thisApp.initPages();
   },
 };

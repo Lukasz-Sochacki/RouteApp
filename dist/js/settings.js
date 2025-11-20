@@ -7,7 +7,9 @@ export const select = {
     pages: '#pages',
     finder: '.finder__wrapper',
     finder_grid: '.finder__grid',
+    field: 'field',
     about: '.about__wrapper',
+    button: '.finder__button',
   },
   nav: {
     links: '.header__navigation a',
@@ -19,6 +21,9 @@ export const classNames = {
     active: 'active',
   },
   pages: {
+    active: 'active',
+  },
+  field: {
     active: 'active',
   },
 };
