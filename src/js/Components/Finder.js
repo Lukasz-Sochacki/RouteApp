@@ -161,6 +161,14 @@ class Finder {
       // select clicked field
       thisFinder.grid[field.row][field.col] = true;
       fieldElem.classList.add(classNames.field.active);
+
+      const clickedRoute = [];
+      for (fieldElem in thisFinder.grid) {
+        if (thisFinder.grid[field.row][field.col] == true) {
+          clickedRoute.push(thisFinder.grid[fieldElem]);
+        }
+      }
+      console.log(clickedRoute);
     }
   }
 }
